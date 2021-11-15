@@ -22,9 +22,13 @@ styrke <- strengthvolume %>%
   print()
 
 styrke1 <- styrke %>%
-filter(time == factor(time, levels = c("pre", "week5", "post"))) %>%
+filter(!is.na(combined.load), time == factor(time, levels = c("pre", "week5", "post"))) %>%
   mutate(time = factor(time, levels = c("pre", "week5", "post")),
-         group = factor(sets, levels = c("single", "multiple"))) 
+         group = factor(sets, levels = c("single", "multiple"))) %>% 
+ group_by(participant) %>%
+  mutate(n = n()) %>%
+  filter(n == "6") %>% #bare de med målinger ved alle tester er tatt med.
+   print()
 
 styrke1 %>%
   ggplot(aes(time, combined.load, group = participant, color = group)) + geom_line() + theme_minimal()

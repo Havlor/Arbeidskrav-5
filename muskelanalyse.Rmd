@@ -3,6 +3,8 @@ title: "Muskel"
 author: "Håvard Crantz Lorentzen"
 date: "15 11 2021"
 output: html_document
+editor_options: 
+  chunk_output_type: console
 ---
 
 ```{r}
@@ -12,7 +14,7 @@ data("dxadata")
 library(tidyverse)
 library(ggplot2)
 
-Muskel <- dxadata %>%
+muskel <- dxadata %>%
   select(participant:include, lean.left_leg, lean.right_leg) %>%
   filter(include == "incl") %>%
   pivot_longer(names_to = "leg", 
@@ -20,7 +22,12 @@ Muskel <- dxadata %>%
                cols = lean.left_leg:lean.right_leg) %>%
   mutate(leg = if_else(leg == "lean.left_leg", "L", "R"), 
          sets = if_else(multiple == leg, "multiple", "single")) %>%
-  select(participant, time, sex, include, sets, leg, lean.mass) %>%
+  select(participant, time, sex, sets,lean.mass) %>%
+  group_by(participant) %>%
+  mutate(n = n(), group = factor(sets, levels = c("single", "multiple")), time = factor(time, levels = c("pre", "post"))) %>%
   print()
+
+muskel %>%
+ ggplot(aes(time, lean.mass, group = participant, color = group)) + geom_line() + theme_minimal()
 ```
 
