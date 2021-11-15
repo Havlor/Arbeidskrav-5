@@ -1,0 +1,36 @@
+---
+title: "Styrke"
+author: "Håvard Crantz Lorentzen"
+date: "15 11 2021"
+output: html_document
+editor_options: 
+  chunk_output_type: console
+---
+
+
+```{r}
+library(exscidata)
+data("strengthvolume")
+
+
+styrke <- strengthvolume %>%
+  group_by(exercise) %>%
+  mutate(scaled.load = load / max(load, na.rm = TRUE)) %>%
+  group_by(participant, time, sex, sets) %>%
+  summarise(combined.load = mean(scaled.load, na.rm = TRUE)) %>%
+  ungroup() %>%
+  print()
+
+styrke1 <- styrke %>%
+filter(time == factor(time, levels = c("pre", "week5", "post"))) %>%
+  mutate(time = factor(time, levels = c("pre", "week5", "post")),
+         group = factor(sets, levels = c("single", "multiple"))) 
+
+styrke1 %>%
+  ggplot(aes(time, combined.load, group = participant, color = group)) + geom_line() + theme_minimal()
+
+
+
+  
+```
+
