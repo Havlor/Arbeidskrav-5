@@ -1,0 +1,8 @@
+---
+title: "Skrivedokument"
+author: "Håvard Crantz Lorentzen"
+date: "15 11 2021"
+output: html_document
+---
+
+## 1 vs 3 sett
