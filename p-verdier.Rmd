@@ -25,12 +25,14 @@ prepost_styrke <- styrke1 %>%
   filter(!is.na(change))
 
 m.linear <- lm(post ~ pre + group,  data = prepost_styrke)
+
 m.2 <- lm(change ~ pre + group,  data = prepost_styrke)
+
 m.log <- lm(log(post) ~ pre + group,  data = prepost_styrke)
   
 summary(m.linear)
+summary(m.2)
 summary(m.log)
-
 ```
 
 

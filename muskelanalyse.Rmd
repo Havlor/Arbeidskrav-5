@@ -30,5 +30,28 @@ muskel <- dxadata %>%
 muskel %>%
  ggplot(aes(time, lean.mass, group = participant, color = group)) + geom_line() + theme_minimal()
 
+
+muskel1 <- muskel %>%
+  pivot_wider(names_from = time,
+              values_from = lean.mass)%>%
+  mutate(diff = post - pre) %>%
+  group_by(sets)%>%
+  summarise(m = mean(diff),
+            sd = sd(diff)) %>%
+   mutate(ms = paste0(signif(m, 3), "(", signif(sd, 3), ")")) %>%
+  select(sets, ms) %>%
+  print()
+
+muskelprosent <- muskel %>%
+  pivot_wider(names_from = time,
+              values_from = lean.mass)%>%
+  mutate(diff = (post - pre)/pre * 100) %>%
+  group_by(sets)%>%
+  summarise(m = mean(diff),
+            sd = sd(diff)) %>%
+  mutate(ms = paste0(signif(m, 3), "(", signif(sd, 3), ")")) %>%
+  select(sets, ms) %>%
+  print()
+
 ```
 
