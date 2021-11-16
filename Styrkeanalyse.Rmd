@@ -33,7 +33,24 @@ filter(!is.na(combined.load), time == factor(time, levels = c("pre", "week5", "p
 styrke1 %>%
   ggplot(aes(time, combined.load, group = participant, color = group)) + geom_line() + theme_minimal()
 
+ggplot(styrke1, aes(time, combined.load, color = group, group = participant)) + geom_line()
 
+diff <- styrke1 %>%
+  select(participant, sets, group, time, combined.load) %>%
+  pivot_wider(names_from = time,
+              values_from = combined.load) %>%
+  mutate(diff1 = (week5 - pre)/pre * 100, diff2 = (post - pre)/pre * 100)  %>%
+  group_by(sets) %>%
+  summarise(sd1 = sd(diff1),
+            m1 = mean(diff1),
+            sd2 = sd(diff2),
+            m2 = mean(diff2))%>%
+   mutate(ms1 = paste0(signif(m1, 3), "(", signif(sd1, 3), ")"),ms2 = paste0(signif(m2, 3), "(", signif(sd2, 3), ")")) %>%
+  select(sets,ms1, ms2) %>%
+  print()
+  
+  
+  
 
   
 ```
