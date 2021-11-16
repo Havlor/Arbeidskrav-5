@@ -1,0 +1,36 @@
+---
+title: "T-test"
+author: "Håvard Crantz Lorentzen"
+date: "16 11 2021"
+output: html_document
+editor_options: 
+  chunk_output_type: console
+---
+
+```{r}
+library(exscidata)
+data("strengthvolume")
+
+styrke1 %>%
+mutate(time = factor(time, levels = c("pre", "week5", "post")))%>%
+        ggplot(aes(time, combined.load, fill = group)) + 
+        geom_boxplot() 
+
+prepost_styrke <- styrke1 %>%
+   filter(time != "week5") %>%
+    mutate(time = factor(time, levels = c("pre", "post"))) %>% 
+  pivot_wider(names_from = time, 
+              values_from = combined.load) %>%
+  mutate(change = post - pre) %>%
+  filter(!is.na(change))
+
+m.linear <- lm(post ~ pre + group,  data = prepost_styrke)
+m.2 <- lm(change ~ pre + group,  data = prepost_styrke)
+m.log <- lm(log(post) ~ pre + group,  data = prepost_styrke)
+  
+summary(m.linear)
+summary(m.log)
+
+```
+
+
