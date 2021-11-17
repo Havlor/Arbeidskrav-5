@@ -31,9 +31,8 @@ filter(!is.na(combined.load), time == factor(time, levels = c("pre", "week5", "p
    print()
 
 styrke1 %>%
-  ggplot(aes(time, combined.load, group = participant, color = group)) + geom_line() + theme_minimal()
+  ggplot(aes(time, combined.load, group = paste(participant, group), color = group)) + geom_line() + theme_minimal()
 
-ggplot(styrke1, aes(time, combined.load, color = group, group = participant)) + geom_line()
 
 diff <- styrke1 %>%
   select(participant, sets, group, time, combined.load) %>%

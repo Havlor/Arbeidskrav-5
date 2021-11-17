@@ -28,7 +28,7 @@ muskel <- dxadata %>%
   print()
 
 muskel %>%
- ggplot(aes(time, lean.mass, group = participant, color = group)) + geom_line() + theme_minimal()
+ ggplot(aes(time, lean.mass, group = paste(participant, group), color = group)) + geom_line() + theme_minimal()
 
 
 muskel1 <- muskel %>%
