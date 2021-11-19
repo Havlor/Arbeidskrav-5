@@ -10,7 +10,7 @@ bibliography: references.bib
 
 ## Introduksjon
 
-Styrketrening blir mer og mer polulært i det norske samfunn, og tall fra Levekårundersøkelsen i 2019 viser at 4 av 5 trener styrke en gang i uken [@statistisksentralbyrå2019]. Konseptet styrketrening handler om at man ønsker å styrke kroppen, men hvordan gjør man det på lettests mulig måte? Tradisjonelt gjør man en styrkeøvelse kjør man en øvelse X antall ganger (repetisjoner) og i X antall serier (sett). Men hvor mye har det å si at man ett eller flere sett? Flere studier har sett på effekten av å gjøre ett sett og tre sett [@galvão2005; @hass2000; @krieger2009; @radaelli2014; @schoenfeld2019]. Resultatet i studiene er sprikende. Noen studier finner ikke forskjell mellom grupper som trener ett og tre sett [@hass2000 ;@radaelli2014], mens andre studier ser at begge gruppene øker, men tre sett gir en ytterlige effekt på styrke [@krieger2009; @galvão2005]. Det er også sett at man kan oppnå like styrkeeffekter, men at økningen av muskelmasse trenger større volum enn 1 sett for å gi effekt [@schoenfeld2019].
+Styrketrening blir mer og mer polulært i det norske samfunn, og tall fra Levekårundersøkelsen i 2019 viser at 4 av 5 trener styrke en gang i uken [@statistisksentralbyrå2019]. Konseptet styrketrening handler om at man ønsker å styrke kroppen, men hvordan gjør man det på lettests mulig måte? Tradisjonelt gjør man en styrkeøvelse kjør man en øvelse X antall ganger (repetisjoner) og i X antall serier (sett). Men hvor mye har det å si at man ett eller flere sett? Flere studier har sett på effekten av å gjøre ett sett og tre sett [@galvão2005; @hass2000; @krieger2009; @radaelli2014; @schoenfeld2019]. Resultatet i studiene er sprikende. Noen studier finner ikke forskjell mellom grupper som trener ett og tre sett [@hass2000 ; @radaelli2014], mens andre studier ser at begge gruppene øker, men tre sett gir en ytterlige effekt på styrke [@krieger2009; @galvão2005]. Det er også sett at man kan oppnå like styrkeeffekter, men at økningen av muskelmasse trenger større volum enn 1 sett for å gi effekt [@schoenfeld2019].
 
 Basert på statestikken fra Statisistik stentralberå (2019) er det mange som får til å trene styrke en gang i uken, men vi vet at skal må få gunstig styrkeeffekt, må man trene 2-3 ganger i uken [@schoenfeld2016]. På bagrunn av dette vil det være gunstig å finne ut av spørsmålet om ett sett er nok, da en treningsøkt tar mye kortere tid. Noe av det som gjør at det er vanskelig å dra en tydelig konklusjon av studiene på området er at det vil være individuelle variajsoner. Derfor er det er det intersant å gjøre studie på hvor en trener ett sett på ene benet og tre sett på andre benet. På denne måten vil en sikre at framgangen ikke blir forskjellig på bagrunn av at gruppeforskjeller.
 
@@ -30,7 +30,7 @@ ikkerøyekerer mellom 18-40
 
 ### Trening
 
-### Statestikk 
+### Statestikk
 
 ## Resultat
 
