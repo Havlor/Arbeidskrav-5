@@ -10,6 +10,7 @@ editor_options:
 
 ```{r}
 library(exscidata)
+library(tidyverse)
 data("strengthvolume")
 
 
@@ -30,7 +31,7 @@ filter(!is.na(combined.load), time == factor(time, levels = c("pre", "week5", "p
   filter(n == "6") %>% #bare de med målinger ved alle tester er tatt med.
    print()
 
-styrke1 %>%
+figurstyrke <- styrke1 %>%
   ggplot(aes(time, combined.load, group = paste(participant, group), color = group)) + geom_line() + theme_minimal()
 
 
@@ -44,13 +45,31 @@ diff <- styrke1 %>%
             m1 = mean(diff1),
             sd2 = sd(diff2),
             m2 = mean(diff2))%>%
-   mutate(ms1 = paste0(signif(m1, 3), "(", signif(sd1, 3), ")"),ms2 = paste0(signif(m2, 3), "(", signif(sd2, 3), ")")) %>%
-  select(sets,ms1, ms2) %>%
+   mutate(week5 = paste0(signif(m1, 3), "(", signif(sd1, 3), ")"),post = paste0(signif(m2, 3), "(", signif(sd2, 3), ")")) %>%
+  select(sets,week5, post) %>%
   print()
-  
-  
-  
 
+diff
   
+library(knitr)
+library(kableExtra)
+library(flextable)
+
+tabellstyrke<- diff %>%
+mutate(sets = factor(sets, levels = c("multiple", "single"), 
+                        labels = c("3 sett", "1 sett"))) %>%
+  select(sets, week5, post) %>%
+  arrange(sets) %>%
+   flextable()  %>%
+  set_header_labels(sets = " ",
+                    week5 = "Uke 5", 
+                     post = " Post")%>%
+    # Add footnote
+    add_footer_row(values = "Verdiene er gitt som gjennsomsnitt og standardavvik (SD)", colwidths = 3) %>%
+    # Make the columns widths match the content
+    autofit()
+  
+tabellstyrke
+figurstyrke
 ```
 
