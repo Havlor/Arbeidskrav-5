@@ -11,6 +11,10 @@ editor_options:
 ```{r}
 library(exscidata)
 library(tidyverse)
+library(knitr)
+library(kableExtra)
+library(flextable)
+
 data("strengthvolume")
 
 
@@ -31,8 +35,24 @@ filter(!is.na(combined.load), time == factor(time, levels = c("pre", "week5", "p
   filter(n == "6") %>% #bare de med målinger ved alle tester er tatt med.
    print()
 
-figurstyrke <- styrke1 %>%
-  ggplot(aes(time, combined.load, group = paste(participant, group), color = group)) + geom_line() + theme_minimal()
+styrkefigur <- styrke %>%
+filter(!is.na(combined.load), time == factor(time, levels = c("pre", "week5", "post"))) %>%
+  mutate(time = factor(time, levels = c("pre", "week5", "post")),
+         group = factor(sets, levels = c("single", "multiple"))) %>% 
+ group_by(participant) %>%
+  mutate(n = n()) %>%
+  filter(n == "6") %>% #bare de med målinger ved alle tester er tatt med.
+   print()
+
+styrkefigur$time <- factor(styrkefigur$time, levels = c("pre", "week5", "post"),labels = c("Pre-test", "5 uker-test", "Post-test"))
+
+
+                                                                                   
+figurstyrke<- styrkefigur %>%
+  ggplot(aes(time, combined.load, group = paste(participant, group), color = group)) + geom_line() + theme_minimal() + 
+  labs(x = "tidspunkt",
+       y = "Styrkefremgang (gjenomsnitt av alle øvelser)",
+        color = "Gruppe")
 
 
 diff <- styrke1 %>%
@@ -49,11 +69,6 @@ diff <- styrke1 %>%
   select(sets,week5, post) %>%
   print()
 
-diff
-  
-library(knitr)
-library(kableExtra)
-library(flextable)
 
 tabellstyrke<- diff %>%
 mutate(sets = factor(sets, levels = c("multiple", "single"), 
