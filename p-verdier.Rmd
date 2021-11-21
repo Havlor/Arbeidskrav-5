@@ -11,6 +11,7 @@ editor_options:
 library(exscidata)
 data("strengthvolume")
 
+# styrke pre til post
 styrke1 %>%
 mutate(time = factor(time, levels = c("pre", "week5", "post")))%>%
         ggplot(aes(time, combined.load, fill = group)) + 
@@ -22,17 +23,76 @@ prepost_styrke <- styrke1 %>%
   pivot_wider(names_from = time, 
               values_from = combined.load) %>%
   mutate(change = post - pre) %>%
-  filter(!is.na(change))
+  filter(!is.na(change)) %>%
+print()
 
-m.linear <- lm(post ~ pre + group,  data = prepost_styrke)
+m.linear <- lm(post ~ pre + group + sex,  data = prepost_styrke)
 
-m.2 <- lm(change ~ pre + group,  data = prepost_styrke)
-
-m.log <- lm(log(post) ~ pre + group,  data = prepost_styrke)
+m.2 <- lm(change ~ pre + group + sex,  data = prepost_styrke)
   
 summary(m.linear)
 summary(m.2)
-summary(m.log)
+
+#styrke pre til uke 5
+pre5_styrke <- styrke1 %>%
+   filter(time != "post") %>%
+    mutate(time = factor(time, levels = c("pre", "week5"))) %>% 
+  pivot_wider(names_from = time, 
+              values_from = combined.load) %>%
+  mutate(change = week5 - pre) %>%
+  filter(!is.na(change)) %>%
+print()
+
+m.linear_pre5 <- lm(week5 ~ pre + group + sex,  data = pre5_styrke)
+
+m.2_pre5 <- lm(change ~ pre + group + sex,  data = pre5_styrke)
+  
+summary(m.linear_pre5)
+summary(m.2_pre5)
+
+
+#styrke uke 5 til post
+
+fempost_styrke <- styrke1 %>%
+   filter(time != "pre") %>%
+    mutate(time = factor(time, levels = c("week5", "post"))) %>% 
+  pivot_wider(names_from = time, 
+              values_from = combined.load) %>%
+  mutate(change = post - week5) %>%
+  filter(!is.na(change)) %>%
+print()
+
+m.linear_5post <- lm(post ~ week5 + group + sex,  data = fempost_styrke)
+
+m.2_5post <- lm(change ~ week5 + group + sex,  data = fempost_styrke)
+  
+summary(m.linear_5post)
+summary(m.2_5post)
+
+#muskelamsse
+muskelp <- dxadata %>%
+  select(participant:include, lean.left_leg, lean.right_leg) %>%
+  filter(include == "incl") %>%
+  pivot_longer(names_to = "leg", 
+               values_to = "lean.mass", 
+               cols = lean.left_leg:lean.right_leg) %>%
+  mutate(leg = if_else(leg == "lean.left_leg", "L", "R"), 
+         sets = if_else(multiple == leg, "multiple", "single")) %>%
+  select(participant, time, sex, sets,lean.mass) %>%
+  group_by(participant) %>%
+  mutate(n = n(), group = factor(sets, levels = c("single", "multiple")), time = factor(time, levels = c("pre", "post"))) %>%
+  pivot_wider(names_from = time, 
+              values_from = lean.mass)%>%
+  mutate(diff = post - pre) %>%
+  print()
+
+m.linear_muskel <- lm(post ~ pre + group + sex,  data = muskelp)
+
+m.2_muskel <- lm(diff ~ pre + group + sex,  data = muskelp)
+
+  
+summary(m.linear_muskel)
+summary(m.2_muskel)
 ```
 
 
