@@ -9,6 +9,7 @@ editor_options:
 
 ```{r}
 library(exscidata)
+library(lmerTest)
 data("strengthvolume")
 
 # styrke pre til post
@@ -29,9 +30,12 @@ print()
 m.linear <- lm(post ~ pre + group + sex,  data = prepost_styrke)
 
 m.2 <- lm(change ~ pre + group + sex,  data = prepost_styrke)
+
+m1_prepost <- lmerTest::lmer(change ~ pre + sex + sets + (1|participant), data = prepost_styrke)
   
 summary(m.linear)
 summary(m.2)
+summary(m1_prepost) #rett?
 
 #styrke pre til uke 5
 pre5_styrke <- styrke1 %>%
@@ -46,9 +50,12 @@ print()
 m.linear_pre5 <- lm(week5 ~ pre + group + sex,  data = pre5_styrke)
 
 m.2_pre5 <- lm(change ~ pre + group + sex,  data = pre5_styrke)
+
+m1_pre5 <- lmerTest::lmer(change ~ pre + sex + sets + (1|participant), data = pre5_styrke)
   
 summary(m.linear_pre5)
 summary(m.2_pre5)
+summary(m1_pre5) #rett?
 
 
 #styrke uke 5 til post
@@ -65,9 +72,12 @@ print()
 m.linear_5post <- lm(post ~ week5 + group + sex,  data = fempost_styrke)
 
 m.2_5post <- lm(change ~ week5 + group + sex,  data = fempost_styrke)
+
+m1_5post <- lmerTest::lmer(change ~ week5 + sex + sets + (1|participant), data = fempost_styrke)
   
 summary(m.linear_5post)
 summary(m.2_5post)
+summary(m1_5post) #rett?
 
 #muskelamsse
 muskelp <- dxadata %>%
@@ -90,9 +100,12 @@ m.linear_muskel <- lm(post ~ pre + group + sex,  data = muskelp)
 
 m.2_muskel <- lm(diff ~ pre + group + sex,  data = muskelp)
 
+m1_muskel <- lmerTest::lmer(diff ~ pre + sex + sets + (1|participant), data = muskelp)
   
 summary(m.linear_muskel)
 summary(m.2_muskel)
+summary(m1_muskel) #rett?
+
 ```
 
 
