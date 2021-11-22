@@ -108,4 +108,16 @@ summary(m1_muskel) #rett?
 
 ```
 
+```{r}
+
+figurmuskel
+
+
+```
+
+```{r}
+
+tabellmuskel
+
+```
 
