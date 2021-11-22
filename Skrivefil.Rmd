@@ -29,7 +29,7 @@ Alle deltagere i studien ble informert om potensielle risikoer ved trening og te
 
 ### Deltagere
 
-Det ble rekruttert 41 kvinner og menn til en treningsperiode på 12 uker. Kriterier for å være med var at de måtte være mellom 18-40 år og ikke røyke. De kunne heller ikke være måtte også være vant til å trene (mer enn en økt uka det siste året).  I analysene av styrkefremgang ble bare 29 deltagere inkludert de resterende ikke møtte opp på test ved fem uker. 34 deltagere ble analysert for muskelmasseøkning (bare test ved pre og post), resterende gjennomførte ikke studien (fem stk pga. smerter, en stk. pga skade som ikke hadde med studien å gjøre og en pga. ikke fulgte protokoll).
+Det ble rekruttert 41 kvinner og menn til en treningsperiode på 12 uker. Kriterier for å være med var at de måtte være mellom 18-40 år og ikke røyke. De måtte også være vant til å trene (mer enn en økt uka det siste året).  I analysene av styrkefremgang ble bare 29 deltagere inkludert de resterende ikke møtte opp på test ved fem uker. 34 deltagere ble analysert for muskelmasseøkning (bare test ved pre og post), resterende gjennomførte ikke studien (fem stk pga. smerter, en stk. pga skade som ikke hadde med studien å gjøre og en pga. ikke fulgte protokoll).
 
 ### Trening
 
@@ -263,5 +263,9 @@ tabellstyrke
 ```
 
 ## Diskusjon
+
+Hovedfunnene i denne studien er at tre sett gir en større økning i både styrke og muskelmasse enn å trene ett sett etter 12 uker med styrketrening. Den største økningen i styrke kom etter de fem første ukene. Funnene våre stemmer overens med flere av studiene som har ser på grupper(1 sett mot 3 sett) opp mot hverandre [@krieger2009; @galvão2005; @schoenfeld2016].
+
+Etter fem uker med trening var ikke forskjellen like stor som ved 12 uker. Dette kan stemme med @radaelli2014, selv om han ikke så forskjell mellom ett og tre sett. I den studein så de på effekten av seks uker hos utrente hvor fordatterene konkluderer med at ett sett gir like god effekt som tre sett hos uttrente i startfasen av styrketrening [@radaelli2014]. Selv om stuien vår viser at tre sett er fordelaktig også i en starfase, kan likevel se en relativt stor økning etter fem uker. I vår studie hadde vi også forsøkspersoner som var vant med trening, noe som også vil gi dem et annaet utgangspunkt enn utrente. Til tross for det såg @hass2000 i sin studie at ett sett var like bra som tre hos trente personer, også på lang sikt. Det som likvell skille denne studien fra vår i tillegg til at vi ikke hadde to grupper, er at de såg på styrketester i både overkropp og underkropp [@hass2000]. Når man ser på resultatet i studien er det signifikant forskjell i favør tre sett i leggfleksjon og de er generelt ikke overbevisende resulatat for ett sett på underkroppsøvelser [@hass2000]. Det kan dermed virke som at tre sett er å foretrekke på underkroppen mens ett sett kan være nok på overkroppen, noe som også stemmer godt overens med andre studeier [@rønnestad2007; @paulsen2003].
 
 ## Kilder
