@@ -25,82 +25,41 @@ I denne studien ønsker vi å se videre på effekten av ett og tre sett, hvor vi
 
 ### Etikk
 
-Alle deltagere i studien ble informert om potensielle risikoer
-ved trening og testing og eventuelle ubehagelige og anstrengende situasjoner og
-gav et informert samtykke. Alle prosedyrer er i tråd med Helsinkideklarasjonen.
+Alle deltagere i studien ble informert om potensielle risikoer ved trening og testing og eventuelle ubehagelige og anstrengende situasjoner og gav et informert samtykke. Alle prosedyrer er i tråd med Helsinkideklarasjonen.
 
 ### Deltagere
 
-Det ble rekruttert 41 kvinner og menn til en treningsperiode
-på 12 uker. Kriterier for å være med var at de måtte være mellom 18-40 år og
-ikke røyke. De kunne heller ikke være måtte også være vant til å trene (mer enn
-en økt uka det siste året).  I analysene
-av styrkefremgang ble bare 29 deltagere inkludert de resterende ikke møtte opp
-på test ved fem uker. 34 deltagere ble analysert for muskelmasseøkning (bare
-test ved pre og post), resterende gjennomførte ikke studien (fem stk pga. smerter,
-en stk. pga skade som ikke hadde med studien å gjøre og en pga. ikke fulgte
-protokoll).
+Det ble rekruttert 41 kvinner og menn til en treningsperiode på 12 uker. Kriterier for å være med var at de måtte være mellom 18-40 år og ikke røyke. De kunne heller ikke være måtte også være vant til å trene (mer enn en økt uka det siste året).  I analysene av styrkefremgang ble bare 29 deltagere inkludert de resterende ikke møtte opp på test ved fem uker. 34 deltagere ble analysert for muskelmasseøkning (bare test ved pre og post), resterende gjennomførte ikke studien (fem stk pga. smerter, en stk. pga skade som ikke hadde med studien å gjøre og en pga. ikke fulgte protokoll).
 
 ### Trening
 
-Trenging som ble gjennomført var et helkroppstreningsprogram
-hvor treningen av ble gjort forskjellig på høyre og venstre fot. De ene bene
-trente ett sett, mens det andre trente tre sett. Hvilket ben som trente hva,
-ble randomisert. Antall repetisjoner 0-2 uker var 10 repetisjoner maksimum (RM),
-uke 2-5 var det 8RM, uke 5-12 var det 7RM. Det ble gjort treninger i uken, med
-unntak av ukene hvor det ble gjort test. Alle økter ble gjort på ved kvalifiserte
-trenere (91% av øktene, resterende økter ble gjort uten trener for at det
-skulle bli gjennomførbart). Øvelsene på bena ble gjort i denne rekkefølgen:
-unilateral benpress, knefleksjon og knefleksjon med enten ett sett eller tre
-sett. Det ene settet ble gjort mellom andre og tredje sett i tre sett serien.
-Etter bedøvelsene ble to sett av øvelser på overkroppen gjort I to sett: bilateral
-benkpress, nedtrekk og enten skulderpress eller sittende roing (gjort annenhver
-økt).  Pauser mellom sett var 90-180 sekund
-og pause mellom økten var på minimum 24 timer.
+Trenging som ble gjennomført var et helkroppstreningsprogram hvor treningen av ble gjort forskjellig på høyre og venstre fot. De ene bene trente ett sett, mens det andre trente tre sett. Hvilket ben som trente hva, ble randomisert. Antall repetisjoner 0-2 uker var 10 repetisjoner maksimum (RM), uke 2-5 var det 8RM, uke 5-12 var det 7RM. Det ble gjort treninger i uken, med unntak av ukene hvor det ble gjort test. Alle økter ble gjort på ved kvalifiserte trenere (91% av øktene, resterende økter ble gjort uten trener for at det skulle bli gjennomførbart). Øvelsene på bena ble gjort i denne rekkefølgen: unilateral benpress, knefleksjon og knefleksjon med enten ett sett eller tre sett. Det ene settet ble gjort mellom andre og tredje sett i tre sett serien. Etter bedøvelsene ble to sett av øvelser på overkroppen gjort I to sett: bilateral benkpress, nedtrekk og enten skulderpress eller sittende roing (gjort annenhver økt).  Pauser mellom sett var 90-180 sekund og pause mellom økten var på minimum 24 timer.
 
 ### Testing
 
 #### Styrketester
 
-Styrketestne ble gjort ved pre,
-etter fem uker og ved post (12 uker). Tre av testene ble gjort som unilateral kneekstensjon
-i
-dynamometer (Cybex 6000, Cybex International, Medway USA). I forkant av testingen
-ble en standardisert oppvarming gjennomført på ergometersykkel i 5
-minutter. Dynamometeret ble justert av testleder sånn at individuelle
-innstillinger ble gjort. Før hver test ble det gjort standardiserte oppvarmingsrepetisjoner
-i dynamometeret. Isokinetisk (isok) og isometrisk (isom) styrke ble målt ved
-maksimalt dreiemoment målt i newtonmeter, og ble notert for hver test (isok120,
-isok240 og isok60 grader per sekund bevegelseshastighet og isom0 (kneet i 60
-graders vinkel)). Det ble gitt to forsøk ved isok60 og isom60 og tre forsøk ved
-isok240 og isok120 og høyeste ble registrert.
+Styrketestne ble gjort ved pre, etter fem uker og ved post (12 uker). Tre av testene ble gjort som unilateral kneekstensjon i dynamometer (Cybex 6000, Cybex International, Medway USA). I forkant av testingen ble en standardisert oppvarming gjennomført på ergometersykkel i 5 minutter. Dynamometeret ble justert av testleder sånn at individuelle innstillinger ble gjort. Før hver test ble det gjort standardiserte oppvarmingsrepetisjoner i dynamometeret. Isokinetisk (isok) og isometrisk (isom) styrke ble målt ved maksimalt dreiemoment målt i newtonmeter, og ble notert for hver test (isok120, isok240 og isok60 grader per sekund bevegelseshastighet og isom0 (kneet i 60 graders vinkel)). Det ble gitt to forsøk ved isok60 og isom60 og tre forsøk ved isok240 og isok120 og høyeste ble registrert.
 
-De to andre testene var 1RM-tester i unilateral
-kneekstensjon og benpress. Som oppvarming ble det gjort 10, 6 og 3 repetisjoner
-ved henholdsvis 50, 75 og 85% av forventet 1RM. Deretter ble 1RM funnet ved at
-vekten ble økt gradvis til de de ikke klarte å fullføre full bevegelse i
-øvelsen. Den høyeste gjennomførte repetisjonen ble satt som 1RM.
+De to andre testene var 1RM-tester i unilateral kneekstensjon og benpress. Som oppvarming ble det gjort 10, 6 og 3 repetisjoner ved henholdsvis 50, 75 og 85% av forventet 1RM. Deretter ble 1RM funnet ved at vekten ble økt gradvis til de de ikke klarte å fullføre full bevegelse i øvelsen. Den høyeste gjennomførte repetisjonen ble satt som 1RM.
 
-Resultatet ble regnet om til en kombinert score som er et
-gjennomsnitt av alle styrketestene.
+Resultatet ble regnet om til en kombinert score som er et gjennomsnitt av alle styrketestene.
 
 #### Testing av Muskelmasse
 
-Ved pre og post-test ble det brukt «dual-energy X-ray
-absorptiometry» (DXA). Deltagerne fikk beskjed om å faste de to timene
-før test og å unngå fysisk aktivitet 48 timer før.  
+Ved pre og post-test ble det brukt «dual-energy X-ray absorptiometry» (DXA). Deltagerne fikk beskjed om å faste de to timene før test og å unngå fysisk aktivitet 48 timer før.  
 
 ### Statestikk
 
-For å se forskjell mellom 1 sett og 3 sett ble ANCOVA brukt, hvor
-det ble tatt hensyn til at dataene er korrelerte. Dette er da man gjør to forskjellige
-protokoller på samme person. Det ble også sett på forskjeller innad i kjønn. For
-muskelmasse ble det sett på forskjell på fra pre til post. Endring i
-muskelmasse ble analysert ved pre til 5 uker, 5 uker til post, og pre til post.
-En P-verdi under 0,05 blir sett på som signifikant endring. Alle tall er gitt som
-gjennomsnitt med standardavvik. Tabeller, figurer og analyser ble gjort i RStudio (versjon 1.4.1717; R Founadtion for Statistics Computing, Vienna AT).
+For å se forskjell mellom 1 sett og 3 sett ble ANCOVA brukt, hvor det ble tatt hensyn til at dataene er korrelerte. Dette er da man gjør to forskjellige protokoller på samme person. Det ble også sett på forskjeller innad i kjønn. For muskelmasse ble det sett på forskjell på fra pre til post. Endring i muskelmasse ble analysert ved pre til 5 uker, 5 uker til post, og pre til post. En P-verdi under 0,05 blir sett på som signifikant endring. Alle tall er gitt som gjennomsnitt med standardavvik. Tabeller, figurer og analyser ble gjort i RStudio (versjon 1.4.1717; R Founadtion for Statistics Computing, Vienna AT).
 
 ## Resultat
+
+### Muskelmasse
+
+Benet som trente tre sett økte signifikant mer enn benet som trente
+ett sett, med henholdsvis økning på 3.37% (±4.59%) og 2.05% (±3.62) (p \<
+0.05) (figur 1). Det var ingen forskjell mellom benene ved pre.
 
 ```{r setup, include=FALSE, results='hide'}
 knitr::opts_chunk$set(echo = TRUE)
@@ -200,6 +159,15 @@ figurmuskel
 
 ```
 
+### Muskelstyrke 
+
+Begge gruppene økte i styrke fra pre til uke 5 og uke 5 til
+post (figur2) (p \< 0.05). Den største økningen kom for begge
+treningsmetodene mellom pre og uke fem (begge p \< 0.01) (tabell 1). Fra uke
+5 og post var det en økning på 10% for benet som trente 3 sett og 6.8% for
+benet som trente 1 sett (begge p \< 0.01). Benet som trente tre sett økte mer
+en benet som trente ett sett ved både 5 uker og ved post-test (tabell 1).
+
 ```{r setup, include=FALSE, results='hide'}
 
 knitr::opts_chunk$set(echo = TRUE)
@@ -271,7 +239,7 @@ mutate(sets = factor(sets, levels = c("multiple", "single"),
                     week5 = "Uke 5", 
                      post = " Post")%>%
     # Add footnote
-    add_footer_row(values = "Verdiene er gitt som gjennsomsnitt og standardavvik (SD)", colwidths = 3) %>%
+    add_footer_row(values = "Verdiene er gitt som gjennsomsnitt og standardavvik (SD). p < 0.01 ved pre til uke fem og uke fem til post for begge grupper, p < 0.01 ved begge tidspunt for at tre sett økte mer enn fem sett", colwidths = 3) %>%
     # Make the columns widths match the content
     autofit()
   

@@ -48,7 +48,7 @@ figurmuskel <- muskelfigur %>%
  ggplot(aes(time, lean.mass, group = paste(participant, group), color = group)) + geom_line() + theme_minimal() + 
    labs(x = "Tidspunkt",
        y = " Muskelmasse (gram)",
-        color = "Gruppe")
+        color = "Gruppe") 
 
 
 muskel1 <- muskel %>%
