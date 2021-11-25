@@ -94,26 +94,46 @@ figurendring <- styrke1 %>%
               values_from = combined.load) %>%
   mutate(uke_5 = (week5 - pre)/pre * 100, uke_12 = (post - pre)/pre * 100)  %>%
   group_by(sets) %>%
- select(participant, sets, uke_5, uke_12) %>%
+ select(participant, sets, uke_5, uke_12, pre) %>%
+  mutate(uke_1 = pre-pre) %>%
+  pivot_longer(names_to = "tid", values_to = "prosentvis ending") %>%
+  print()
   
-ggplot(aes(uke_5, uke_12 , group = paste(participant, sets), color = sets)) + geom_line() + theme_minimal() + 
-  labs(x = "tidspunkt",
-       y = "prosesntvis endring i styrke",
-        color = "Gruppe")
+ggplot(aes(sets, c(uke_5, uke_12))) + geom_line() + theme_minimal()
+ 
 
-
-enringpretilpost <- styrke1 %>%
+endringpretilpost <- styrke1 %>%
   select(participant, sex, sets, group, time, combined.load) %>%
   pivot_wider(names_from = time,
               values_from = combined.load) %>%
   mutate(diff = (post - pre)/pre * 100) %>%
   group_by(sets) %>%
-  ggplot(aes(sets, diff, group = paste(participant, sex), color = sex), color = sex) + geom_line() + theme_minimal() + 
-  labs(x = "tidspunkt",
+  ggplot(aes(sets, diff, group = participant))
+  + geom_line() + theme_minimal() + labs(x = "tidspunkt",
        y = "Styrkefremgang (gjenomsnitt av alle øvelser)",
         color = "Gruppe")
-  
 
+
+
+strengthvolume %>%
+  filter(exercise == "legext", time %in% c("pre", "post")) %>%
+  group_by(sets, time) %>%
+  summarise(m = mean(load, na.rm = TRUE), 
+            s = sd(load, na.rm = TRUE)) %>%
+  mutate(time = factor(time, levels = c("pre", "post"), labels = c("Pre-training", "Post-training")), 
+         sets = factor(sets, levels = c("single", "multiple"), labels = c("Single-set", "Multiple-set"))) %>%
+  ggplot(aes(time, m, color = sets)) + 
+  
+  geom_errorbar(aes(ymin = m - s, ymax = m + s), 
+                position = position_dodge(width = 0.2), 
+                width = 0.2) +
+  geom_point(position = position_dodge(width = 0.2)) +
+  
+  labs(x = "Time-point", 
+       y = "Average load (kg)", 
+       color = "Sets") +
+theme_bw() + 
+  theme(legend.position = c(0.1, 0.9))
 
 ```
 
