@@ -3,9 +3,9 @@ title: "Effekten av 1 vs 3 sett"
 author: "Håvard Crantz Lorentzen"
 date: "15 11 2021"
 output:
-  pdf_document: default
-  html_document: default
   word_document: default
+  html_document: default
+  pdf_document: default
 bibliography: references.bib
 editor_options:
   chunk_output_type: console
@@ -57,11 +57,10 @@ For å se forskjell mellom 1 sett og 3 sett ble ANCOVA brukt, hvor det ble tatt 
 
 ### Muskelmasse
 
-Benet som trente tre sett økte signifikant mer enn benet som trente
-ett sett, med henholdsvis økning på 3.37% (±4.59%) og 2.05% (±3.62) (p \<
-0.05) (figur 1). Det var ingen forskjell mellom benene ved pre.
+Benet som trente tre sett økte signifikant mer enn benet som trente ett sett, med henholdsvis økning på 3.37% (±4.59%) og 2.05% (±3.62) (p \< 0.05) (figur 1). Det var ingen forskjell mellom benene ved pre.
 
-```{r setup, include=FALSE, results='hide'}
+```{r, setup, include=FALSE, results='hide',}
+
 
 options(knitr.duplicate.label = "allow")
 library(exscidata)
@@ -159,14 +158,9 @@ figurmuskel
 
 ```
 
-### Muskelstyrke 
+### Muskelstyrke
 
-Begge gruppene økte i styrke fra pre til uke 5 og uke 5 til
-post (figur2) (p \< 0.05). Den største økningen kom for begge
-treningsmetodene mellom pre og uke fem (begge p \< 0.01) (tabell 1). Fra uke
-5 og post var det en økning på 10% for benet som trente 3 sett og 6.8% for
-benet som trente 1 sett (begge p \< 0.01). Benet som trente tre sett økte mer
-en benet som trente ett sett ved både 5 uker og ved post-test (tabell 1).
+Begge gruppene økte i styrke fra pre til uke 5 og uke 5 til post (figur2) (p \< 0.05). Den største økningen kom for begge treningsmetodene mellom pre og uke fem (begge p \< 0.01) (tabell 1). Fra uke 5 og post var det en økning på 10% for benet som trente 3 sett og 6.8% for benet som trente 1 sett (begge p \< 0.01). Benet som trente tre sett økte mer en benet som trente ett sett ved både 5 uker og ved post-test (tabell 1).
 
 ```{r setup, include=FALSE, results='hide'}
 
@@ -254,7 +248,7 @@ figurstyrke
 
 ```
 
-```{r my_table, include=TRUE, results='asis'}
+```{r, my_table, include=TRUE, results='asis'}
 
 
 options(knitr.duplicate.label = "allow")

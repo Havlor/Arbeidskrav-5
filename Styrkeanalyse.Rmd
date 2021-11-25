@@ -86,5 +86,34 @@ mutate(sets = factor(sets, levels = c("multiple", "single"),
   
 tabellstyrke
 figurstyrke
+
+
+figurendring <- styrke1 %>%
+  select(participant, sets, time, combined.load) %>%
+  pivot_wider(names_from = time,
+              values_from = combined.load) %>%
+  mutate(uke_5 = (week5 - pre)/pre * 100, uke_12 = (post - pre)/pre * 100)  %>%
+  group_by(sets) %>%
+ select(participant, sets, uke_5, uke_12) %>%
+  
+ggplot(aes(uke_5, uke_12 , group = paste(participant, sets), color = sets)) + geom_line() + theme_minimal() + 
+  labs(x = "tidspunkt",
+       y = "prosesntvis endring i styrke",
+        color = "Gruppe")
+
+
+enringpretilpost <- styrke1 %>%
+  select(participant, sex, sets, group, time, combined.load) %>%
+  pivot_wider(names_from = time,
+              values_from = combined.load) %>%
+  mutate(diff = (post - pre)/pre * 100) %>%
+  group_by(sets) %>%
+  ggplot(aes(sets, diff, group = paste(participant, sex), color = sex), color = sex) + geom_line() + theme_minimal() + 
+  labs(x = "tidspunkt",
+       y = "Styrkefremgang (gjenomsnitt av alle øvelser)",
+        color = "Gruppe")
+  
+
+
 ```
 

@@ -1,0 +1,14 @@
+---
+title: "tilbakemeldinger 23.11"
+author: "Håvard Crantz Lorentzen"
+date: "23 11 2021"
+output: html_document
+---
+
+* Slette unødvenige filer
+* Komenter kondene/skriv plan på hva som skal skje
+* legg inn deskreptiv data
+* trenger ikke en p verdi for å beskrive effekt av styrketreningen, bare forskjellen mellom 1 og 3 sett
+* Studien kunne hatt en kontrollgruppe
+* figur som viser prosentvis økning 
+* Deskreptive figurer skal ikke ha p-verdi, lag figur som viser inteferens 
