@@ -3,9 +3,9 @@ title: "Effekten av 1 vs 3 sett"
 author: "Håvard Crantz Lorentzen"
 date: "15 11 2021"
 output:
-  word_document: default
-  html_document: default
   pdf_document: default
+  html_document: default
+  word_document: default
 bibliography: references.bib
 editor_options:
   chunk_output_type: console
@@ -59,7 +59,7 @@ For å se forskjell mellom 1 sett og 3 sett ble ANCOVA brukt, hvor det ble tatt 
 
 Benet som trente tre sett økte signifikant mer enn benet som trente ett sett, med henholdsvis økning på 3.37% (±4.59%) og 2.05% (±3.62) (p \< 0.05) (figur 1). Det var ingen forskjell mellom benene ved pre.
 
-```{r, setup, include=FALSE, results='hide',}
+```{r tabell, include=FALSE, results='hide',}
 
 
 options(knitr.duplicate.label = "allow")
@@ -150,7 +150,7 @@ mutate(sets = factor(sets, levels = c("multiple", "single"),
 
 ```
 
-```{r, include=TRUE, results='hide', fig.cap = "Figur 1 viser økningen i muskelvekst fra pre-test til post-tesst for alle forsøkspersoner skildt ved single- sett (1 sett) og multiple- sett (3 sett)."}
+```{r figur, include=TRUE, results='hide', fig.cap = "Figur 1 viser økningen i muskelvekst fra pre-test til post-tesst for alle forsøkspersoner skildt ved single- sett (1 sett) og multiple- sett (3 sett)."}
 knitr::opts_chunk$set(echo = TRUE)
 options(knitr.duplicate.label = "allow")
 
@@ -240,7 +240,7 @@ mutate(sets = factor(sets, levels = c("multiple", "single"),
 
 ```
 
-```{r, include=TRUE, results='hide', fig.cap = "Figur 2 viser økningen i muskelstyrke, fra pre-tests til 5 uker og 5 uker til post-test for alle forsøkspersoner skildt ved single- sett (1 sett) og multiple- sett (3 sett)."}
+```{r styrkefigur, include=TRUE, results='hide', fig.cap = "Figur 2 viser økningen i muskelstyrke, fra pre-tests til 5 uker og 5 uker til post-test for alle forsøkspersoner skildt ved single- sett (1 sett) og multiple- sett (3 sett)."}
 
 
 options(knitr.duplicate.label = "allow")
@@ -248,7 +248,7 @@ figurstyrke
 
 ```
 
-```{r, my_table, include=TRUE, results='asis'}
+```{r tabellstyrke, my_table, include=TRUE, results='asis'}
 
 
 options(knitr.duplicate.label = "allow")
