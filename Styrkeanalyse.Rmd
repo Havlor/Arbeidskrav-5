@@ -96,10 +96,11 @@ figurendring <- styrke1 %>%
   group_by(sets) %>%
  select(participant, sets, uke_5, uke_12, pre) %>%
   mutate(uke_1 = pre-pre) %>%
-  pivot_longer(names_to = "tid", values_to = "prosentvis ending") %>%
-  print()
+  pivot_longer(names_to = "tid", values_to = "prosentvis_endring", cols = c(uke_1, uke_5, uke_12)) %>%
+  mutate(tid = factor(tid, levels = c("uke_1", "uke_5", "uke_12"), 
+                        labels = c("Uke 1", "Uke 5", "Uke 12"))) %>%
   
-ggplot(aes(sets, c(uke_5, uke_12))) + geom_line() + theme_minimal()
+  ggplot(aes(tid, prosentvis_endring, group = paste(participant, sets), color = sets)) + geom_line() + theme_minimal()
  
 
 endringpretilpost <- styrke1 %>%
